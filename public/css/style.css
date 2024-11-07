@@ -1,0 +1,152 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("/public/images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav a {
+  color: #d18c47;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav a:hover {
+  color: #f7f7f7;
+  background-color: #d18c47;
+  border-radius: 5px;
+}
+
+/* Main content styling */
+.main-content {
+  margin: 30px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Form container */
+.form-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-field input,
+.form-field select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #d18c47;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #d18c47;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #d19254;
+}
+
+.submit-button:active {
+  transform: scale(0.98);
+}
+
+/* Task List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+ul li {
+  background: rgba(255, 255, 255, 0.9);
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul li:hover {
+  background: #f0f0f0;
+}
+
+/* Error styling */
+.error-messages {
+  color: red;
+  list-style-type: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
